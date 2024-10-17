@@ -1,13 +1,12 @@
-# mini1
-
-![logo](https://github.com/user-attachments/assets/a7861377-a95a-4db5-a132-d978e57624c5)
+# SweetHome
+![logo](https://github.com/user-attachments/assets/25c676f7-87f4-4552-b533-866922319fff)
 <br>
 <br>
 <br>
 <br>
 ## 프로젝트 설명
-배달의 민족과 요기요를 벤치마킹한 웹 기반의 배달 주문 딜리버리 서비스입니다. <br>
-자바, 스프링 기반의 웹 형식으로 개발하였습니다.  <br>
+오늘의 집을 벤치마킹하여 개발한 이미지 형식의 블로그 웹 서비스입니다. <br>
+Servlet, JSP 기반으로 개발하였습니다.  <br>
 <br>
 <br>
 <br>
@@ -20,26 +19,16 @@
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
 ![JSP](https://img.shields.io/badge/JSP-007396?logo=java&logoColor=white)
 ![Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?logo=bootstrap&logoColor=white)
-![jQuery](https://img.shields.io/badge/jQuery-0769AD?logo=jquery&logoColor=white)
-![AJAX](https://img.shields.io/badge/AJAX-4B8BBE?logo=javascript&logoColor=white)
-![JSON](https://img.shields.io/badge/JSON-000000?logo=json&logoColor=white)
 
 ### 백앤드
 
 ![Java](https://img.shields.io/badge/Java-17-007396?logo=java&logoColor=white)
-![Spring](https://img.shields.io/badge/spring-%236DB33F.svg?&logo=spring&logoColor=white)
-![Oracle](https://img.shields.io/badge/Oracle-9.0-F80000?logo=oracle&logoColor=white)
-![Maven](https://img.shields.io/badge/Maven-3.8.6-C71A36?logo=apachemaven&logoColor=white)
-![MyBatis](https://img.shields.io/badge/MyBatis-000000?logo=mybatis&logoColor=white)
-![KakaoMap API](https://img.shields.io/badge/KakaoMap%20API-FFCD00?logo=kakao&logoColor=black)
+![Oracle](https://img.shields.io/badge/Oracle-10.0-F80000?logo=oracle&logoColor=white)
+
 
 ### 협업 툴
 
-![Notion](https://img.shields.io/badge/Notion-000000?logo=notion&logoColor=white)
 ![Slack](https://img.shields.io/badge/Slack-4A154B?logo=slack&logoColor=white)
-![GitHub](https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white)
-![Jira](https://img.shields.io/badge/Jira-0052CC?logo=jira&logoColor=white)
-![Confluence](https://img.shields.io/badge/Confluence-172B4D?logo=confluence&logoColor=white)
 
 
 ### 기타
@@ -55,13 +44,12 @@ global IT(글로벌 아이티)<br>
 교육 과정 : 풀스택 프레임워크(자바,스프링)기반 데이터 융합SW개발자 과정 (7회차) 1조 <br>
 교육 기간 : 2024.04.04 ~ 2024.10.07<br>
 <br>
-파이널 프로젝트 주제 : 반려견 종합 정보 시스템 <br><br>
-주제 선정 이유 : 반려견을 키우는 입장에서 반려견이 입장 가능한 곳, 반려견을 위한 곳, 그런 부분에 대한 정보를  <br><br>
+파이널 프로젝트 주제 : 이미지 블로그 웹 게시판  <br><br>
+주제 선정 이유 : 사람들은 이미지가 올려져있는 글을 더 선호하고 정보를 얻는 데 더 믿음성이 있기 때문에  <br><br>
 <br>
 <br>
 mini2 Project 개발 기간<br><br>
-총 개발 기간 : 2024.07.25 ~ 2024.08.02<br><br>
-특이사항 : Oracle 9.0 버전을 사용한 이유는 이미지 업로드를 위한 File 함수가 Javax 기반이기 때문에 <br><br>
+총 개발 기간 : 2024.06.28 ~ 2024.07.05<br><br>
 <br>
 <br>
 <br>
@@ -77,9 +65,9 @@ mini2 Project 개발 기간<br><br>
 <br>
 <br>
 
-## 클라우드 ERD (권한 필요)
+## WinERD 
+<img width="865" alt="스크린샷 2024-10-18 오전 12 01 00" src="https://github.com/user-attachments/assets/e87591af-cb3b-41dc-b9bc-cd7d6da0114e">
 
-![miniproject2_ERD](https://github.com/user-attachments/assets/1c382119-6726-4fa4-86e0-719ebe35ba74)
 <br>
 <br>
 <br>
@@ -98,7 +86,7 @@ mini2 Project 개발 기간<br><br>
 1. 파일을 다운받을 디렉토리로 이동 
 
 2. 해당 github clone
-git clone https://github.com/tkcheon/GlobalIT_Final.git
+git clone https://github.com/tkcheon/GlobalIT_mini1.git
 
 3. vscode 실행
 4. git init
