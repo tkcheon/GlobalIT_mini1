@@ -103,185 +103,103 @@ git clone https://github.com/tkcheon/GlobalIT_mini1.git
 
   ```text
 📦src
+ ┣ 📂DB
+ ┃ ┗ 📜BlogDB.sql
  ┣ 📂main
  ┃ ┣ 📂java
- ┃ ┃ ┣ 📂controller
- ┃ ┃ ┃ ┣ 📜AdminController.java
- ┃ ┃ ┃ ┣ 📜AnswerController.java
- ┃ ┃ ┃ ┣ 📜BoardController.java
- ┃ ┃ ┃ ┣ 📜CommentController.java
- ┃ ┃ ┃ ┣ 📜DiaryController.java
- ┃ ┃ ┃ ┣ 📜LocationController.java
- ┃ ┃ ┃ ┣ 📜MainController.java
- ┃ ┃ ┃ ┣ 📜MemberController.java
- ┃ ┃ ┃ ┣ 📜NaverNewsController.java
- ┃ ┃ ┃ ┣ 📜PetController.java
- ┃ ┃ ┃ ┣ 📜ReplyController.java
- ┃ ┃ ┃ ┗ 📜StatisticsController.java
  ┃ ┃ ┣ 📂dao
- ┃ ┃ ┃ ┣ 📜AnswerDao.java
- ┃ ┃ ┃ ┣ 📜BoardDao.java
- ┃ ┃ ┃ ┣ 📜BoardImagesDao.java
  ┃ ┃ ┃ ┣ 📜CommentDao.java
- ┃ ┃ ┃ ┣ 📜DiaryDao.java
- ┃ ┃ ┃ ┣ 📜DiaryDaoImpl.java
- ┃ ┃ ┃ ┣ 📜HealthDAO.java
- ┃ ┃ ┃ ┣ 📜LocationDao.java
- ┃ ┃ ┃ ┣ 📜LocationDaoImpl.java
- ┃ ┃ ┃ ┣ 📜MemberDAO.java
- ┃ ┃ ┃ ┣ 📜NewsItemDao.java
- ┃ ┃ ┃ ┣ 📜NewsItemImpl.java
- ┃ ┃ ┃ ┣ 📜PetDAO.java
- ┃ ┃ ┃ ┣ 📜ReplyDao.java
- ┃ ┃ ┃ ┗ 📜StatisticsDAO.java
+ ┃ ┃ ┃ ┣ 📜MemberDao.java
+ ┃ ┃ ┃ ┗ 📜PostDao.java
  ┃ ┃ ┣ 📂service
- ┃ ┃ ┃ ┣ 📜LocationService.java
- ┃ ┃ ┃ ┗ 📜NaverNewsService.java
+ ┃ ┃ ┃ ┗ 📜DBService.java
+ ┃ ┃ ┣ 📂servlet
+ ┃ ┃ ┃ ┣ 📂admin
+ ┃ ┃ ┃ ┃ ┣ 📜AdminMemberDeleteAction.java
+ ┃ ┃ ┃ ┃ ┣ 📜AdminMemberList.java
+ ┃ ┃ ┃ ┃ ┣ 📜AdminMemberModifyAction.java
+ ┃ ┃ ┃ ┃ ┗ 📜AdminMemberModifyFormAction.java
+ ┃ ┃ ┃ ┣ 📂comment
+ ┃ ┃ ┃ ┃ ┣ 📜CommentDeleteAction.java
+ ┃ ┃ ┃ ┃ ┣ 📜CommentInsertAction.java
+ ┃ ┃ ┃ ┃ ┗ 📜CommentListAction.java
+ ┃ ┃ ┃ ┣ 📂member
+ ┃ ┃ ┃ ┃ ┣ 📜ChangePasswordAction.java
+ ┃ ┃ ┃ ┃ ┣ 📜FindPasswordAction.java
+ ┃ ┃ ┃ ┃ ┣ 📜LoginAction.java
+ ┃ ┃ ┃ ┃ ┣ 📜LogoutAction.java
+ ┃ ┃ ┃ ┃ ┣ 📜MemberCheckEmailAction.java
+ ┃ ┃ ┃ ┃ ┣ 📜MemberCheckIdAction.java
+ ┃ ┃ ┃ ┃ ┣ 📜MemberCheckNameAction.java
+ ┃ ┃ ┃ ┃ ┣ 📜MemberDeleteAction.java
+ ┃ ┃ ┃ ┃ ┣ 📜MemberJoinAction.java
+ ┃ ┃ ┃ ┃ ┣ 📜MemberModifyAction.java
+ ┃ ┃ ┃ ┃ ┣ 📜MemberModifyFormAction.java
+ ┃ ┃ ┃ ┃ ┗ 📜MemberMypageAction.java
+ ┃ ┃ ┃ ┣ 📂post
+ ┃ ┃ ┃ ┃ ┣ 📜PostDeleteAction.java
+ ┃ ┃ ┃ ┃ ┣ 📜PostInsertAction.java
+ ┃ ┃ ┃ ┃ ┣ 📜PostInsertFormAction.java
+ ┃ ┃ ┃ ┃ ┣ 📜PostLikeAction.java
+ ┃ ┃ ┃ ┃ ┣ 📜PostListAction.java
+ ┃ ┃ ┃ ┃ ┣ 📜PostModifyAction.java
+ ┃ ┃ ┃ ┃ ┣ 📜PostModifyFormAction.java
+ ┃ ┃ ┃ ┃ ┣ 📜PostOneAction.java
+ ┃ ┃ ┃ ┃ ┗ 📜PostScrapAction.java
+ ┃ ┃ ┃ ┗ 📜MainAction.java
  ┃ ┃ ┣ 📂util
- ┃ ┃ ┃ ┣ 📜FileDownload.java
- ┃ ┃ ┃ ┣ 📜MyCommon.java
- ┃ ┃ ┃ ┣ 📜MyOpenAPIKey.java
- ┃ ┃ ┃ ┣ 📜NaverSearchUtills.java
- ┃ ┃ ┃ ┗ 📜Paging.java
+ ┃ ┃ ┃ ┣ 📜FileUploadUtils.java
+ ┃ ┃ ┃ ┗ 📜Util.java
  ┃ ┃ ┗ 📂vo
- ┃ ┃ ┃ ┣ 📜AnswerVo.java
- ┃ ┃ ┃ ┣ 📜BoardImagesVo.java
- ┃ ┃ ┃ ┣ 📜BoardVo.java
  ┃ ┃ ┃ ┣ 📜CommentVo.java
- ┃ ┃ ┃ ┣ 📜FeedingVo.java
- ┃ ┃ ┃ ┣ 📜HealthVO.java
- ┃ ┃ ┃ ┣ 📜LocationVo.java
- ┃ ┃ ┃ ┣ 📜MemberVO.java
- ┃ ┃ ┃ ┣ 📜NewsItem.java
- ┃ ┃ ┃ ┣ 📜NoteVo.java
- ┃ ┃ ┃ ┣ 📜PetVO.java
- ┃ ┃ ┃ ┣ 📜ReplyVo.java
- ┃ ┃ ┃ ┣ 📜StatisticsVO.java
- ┃ ┃ ┃ ┣ 📜StollVo.java
- ┃ ┃ ┃ ┗ 📜WeightVo.java
- ┃ ┣ 📂resources
- ┃ ┃ ┣ 📂config
- ┃ ┃ ┃ ┣ 📂mybatis
- ┃ ┃ ┃ ┃ ┣ 📂mapper
- ┃ ┃ ┃ ┃ ┃ ┣ 📜answer.xml
- ┃ ┃ ┃ ┃ ┃ ┣ 📜board.xml
- ┃ ┃ ┃ ┃ ┃ ┣ 📜comment.xml
- ┃ ┃ ┃ ┃ ┃ ┣ 📜diary.xml
- ┃ ┃ ┃ ┃ ┃ ┣ 📜health.xml
- ┃ ┃ ┃ ┃ ┃ ┣ 📜member.xml
- ┃ ┃ ┃ ┃ ┃ ┣ 📜newsitem.xml
- ┃ ┃ ┃ ┃ ┃ ┣ 📜pet.xml
- ┃ ┃ ┃ ┃ ┃ ┣ 📜reply.xml
- ┃ ┃ ┃ ┃ ┃ ┗ 📜statistics.xml
- ┃ ┃ ┃ ┃ ┣ 📜db.properties
- ┃ ┃ ┃ ┃ ┗ 📜mybatis-config.xml
- ┃ ┃ ┃ ┣ 📂spring
- ┃ ┃ ┃ ┃ ┣ 📂context
- ┃ ┃ ┃ ┃ ┃ ┣ 📜context-0-sample.xml
- ┃ ┃ ┃ ┃ ┃ ┣ 📜context-1-datasource.xml
- ┃ ┃ ┃ ┃ ┃ ┣ 📜context-2-mybatis.xml
- ┃ ┃ ┃ ┃ ┃ ┣ 📜context-3-dao.xml
- ┃ ┃ ┃ ┃ ┃ ┣ 📜context-4-service.xml
- ┃ ┃ ┃ ┃ ┃ ┗ 📜context-5-fileupload.xml
- ┃ ┃ ┃ ┃ ┗ 📂servlet
- ┃ ┃ ┃ ┃ ┃ ┗ 📜servlet-context.xml
- ┃ ┃ ┃ ┗ 📜.DS_Store
- ┃ ┃ ┗ 📜.DS_Store
+ ┃ ┃ ┃ ┣ 📜MemberVo.java
+ ┃ ┃ ┃ ┣ 📜PostVo.java
+ ┃ ┃ ┃ ┗ 📜Post_LikeVo.java
  ┃ ┣ 📂webapp
+ ┃ ┃ ┣ 📂JSP
+ ┃ ┃ ┃ ┗ 📂mypage
+ ┃ ┃ ┃ ┃ ┣ 📜member_modify_form.jsp
+ ┃ ┃ ┃ ┃ ┗ 📜mypage.jsp
  ┃ ┃ ┣ 📂META-INF
  ┃ ┃ ┃ ┗ 📜MANIFEST.MF
  ┃ ┃ ┣ 📂WEB-INF
- ┃ ┃ ┃ ┣ 📂views
- ┃ ┃ ┃ ┃ ┣ 📂admin
- ┃ ┃ ┃ ┃ ┃ ┣ 📜adminMenu.jsp
- ┃ ┃ ┃ ┃ ┃ ┣ 📜boardList.jsp
- ┃ ┃ ┃ ┃ ┃ ┣ 📜healthDetail.jsp
- ┃ ┃ ┃ ┃ ┃ ┣ 📜healthList.jsp
- ┃ ┃ ┃ ┃ ┃ ┣ 📜healthModify.jsp
- ┃ ┃ ┃ ┃ ┃ ┣ 📜memberListForPets.jsp
- ┃ ┃ ┃ ┃ ┃ ┣ 📜memberPetList.jsp
- ┃ ┃ ┃ ┃ ┃ ┣ 📜memberRegister.jsp
- ┃ ┃ ┃ ┃ ┃ ┣ 📜petModify.jsp
- ┃ ┃ ┃ ┃ ┃ ┣ 📜replyList.jsp
- ┃ ┃ ┃ ┃ ┃ ┣ 📜topForAdmin.jsp
- ┃ ┃ ┃ ┃ ┃ ┗ 📜topMenu.jsp
- ┃ ┃ ┃ ┃ ┣ 📂answer
- ┃ ┃ ┃ ┃ ┃ ┗ 📜answer_list.jsp
- ┃ ┃ ┃ ┃ ┣ 📂board
- ┃ ┃ ┃ ┃ ┃ ┣ 📜NewFile.jsp
- ┃ ┃ ┃ ┃ ┃ ┣ 📜board_answer.jsp
- ┃ ┃ ┃ ┃ ┃ ┣ 📜board_answer_modify_form.jsp
- ┃ ┃ ┃ ┃ ┃ ┣ 📜board_ex.jsp
- ┃ ┃ ┃ ┃ ┃ ┣ 📜board_insert_form.jsp
- ┃ ┃ ┃ ┃ ┃ ┣ 📜board_list.jsp
- ┃ ┃ ┃ ┃ ┃ ┣ 📜board_list_free.jsp
- ┃ ┃ ┃ ┃ ┃ ┣ 📜board_list_medical.jsp
- ┃ ┃ ┃ ┃ ┃ ┣ 📜board_modify_form.jsp
- ┃ ┃ ┃ ┃ ┃ ┣ 📜board_reply_form.jsp
- ┃ ┃ ┃ ┃ ┃ ┗ 📜board_view.jsp
- ┃ ┃ ┃ ┃ ┣ 📂diary
- ┃ ┃ ┃ ┃ ┃ ┣ 📜_diary_main.jsp
- ┃ ┃ ┃ ┃ ┃ ┣ 📜diary_insert_form__.jsp
- ┃ ┃ ┃ ┃ ┃ ┣ 📜diary_list.jsp
- ┃ ┃ ┃ ┃ ┃ ┣ 📜diary_modify_form.jsp
- ┃ ┃ ┃ ┃ ┃ ┗ 📜diary_view.jsp
- ┃ ┃ ┃ ┃ ┣ 📂location
- ┃ ┃ ┃ ┃ ┃ ┣ 📜location_main.jsp
- ┃ ┃ ┃ ┃ ┃ ┗ 📜testview2.jsp
- ┃ ┃ ┃ ┃ ┣ 📂member
- ┃ ┃ ┃ ┃ ┃ ┣ 📜memberDetail.jsp
- ┃ ┃ ┃ ┃ ┃ ┣ 📜memberList.jsp
- ┃ ┃ ┃ ┃ ┃ ┣ 📜memberModify.jsp
- ┃ ┃ ┃ ┃ ┃ ┣ 📜member_insert_form.jsp
- ┃ ┃ ┃ ┃ ┃ ┣ 📜member_login_form.jsp
- ┃ ┃ ┃ ┃ ┃ ┣ 📜myPage.jsp
- ┃ ┃ ┃ ┃ ┃ ┗ 📜myPageModify.jsp
- ┃ ┃ ┃ ┃ ┣ 📂news
- ┃ ┃ ┃ ┃ ┃ ┣ 📜news_main.jsp
- ┃ ┃ ┃ ┃ ┃ ┗ 📜testview.jsp
- ┃ ┃ ┃ ┃ ┣ 📂pet
- ┃ ┃ ┃ ┃ ┃ ┣ 📜petList.jsp
- ┃ ┃ ┃ ┃ ┃ ┣ 📜petModify.jsp
- ┃ ┃ ┃ ┃ ┃ ┗ 📜petRegister.jsp
- ┃ ┃ ┃ ┃ ┣ 📂reply
- ┃ ┃ ┃ ┃ ┃ ┗ 📜reply_list.jsp
- ┃ ┃ ┃ ┃ ┣ 📂statistics
- ┃ ┃ ┃ ┃ ┃ ┗ 📜statistics.jsp
- ┃ ┃ ┃ ┃ ┣ 📜footer.jsp
- ┃ ┃ ┃ ┃ ┣ 📜main.jsp
- ┃ ┃ ┃ ┃ ┣ 📜navbar.jsp
- ┃ ┃ ┃ ┃ ┗ 📜top.jsp
- ┃ ┃ ┃ ┗ 📜web.xml
- ┃ ┃ ┣ 📂resources
- ┃ ┃ ┃ ┣ 📂css
- ┃ ┃ ┃ ┃ ┗ 📜common.css
- ┃ ┃ ┃ ┣ 📂images
- ┃ ┃ ┃ ┃ ┣ 📂diary
- ┃ ┃ ┃ ┃ ┃ ┣ 📜diary_1.png
- ┃ ┃ ┃ ┃ ┃ ┣ 📜diary_2.png
- ┃ ┃ ┃ ┃ ┃ ┣ 📜diary_3.png
- ┃ ┃ ┃ ┃ ┃ ┣ 📜diary_4.png
- ┃ ┃ ┃ ┃ ┃ ┗ 📜diary_5.png
- ┃ ┃ ┃ ┃ ┣ 📂main
- ┃ ┃ ┃ ┃ ┃ ┣ 📜main_0.png
- ┃ ┃ ┃ ┃ ┃ ┣ 📜main_1.png
- ┃ ┃ ┃ ┃ ┃ ┗ 📜main_2.png
- ┃ ┃ ┃ ┃ ┣ 📂pets
- ┃ ┃ ┃ ┃ ┃ ┗ 📜default.png
- ┃ ┃ ┃ ┃ ┣ 📜board_img.jpg
- ┃ ┃ ┃ ┃ ┣ 📜comment_img.jpg
- ┃ ┃ ┃ ┃ ┣ 📜logo.png
- ┃ ┃ ┃ ┃ ┣ 📜member_img.jpg
- ┃ ┃ ┃ ┃ ┣ 📜pet_img.jpg
- ┃ ┃ ┃ ┃ ┗ 📜statistics_img.jpg
- ┃ ┃ ┃ ┣ 📜.DS_Store
- ┃ ┃ ┃ ┗ 📜index.global.js
+ ┃ ┃ ┃ ┗ 📂lib
+ ┃ ┃ ┃ ┃ ┣ 📜commons-collections-3.2.1.jar
+ ┃ ┃ ┃ ┃ ┣ 📜commons-dbcp-1.2.2.jar
+ ┃ ┃ ┃ ┃ ┣ 📜commons-pool-1.4.jar
+ ┃ ┃ ┃ ┃ ┣ 📜jakarta.activation-api-2.1.3.jar
+ ┃ ┃ ┃ ┃ ┣ 📜jakarta.mail-2.0.1.jar
+ ┃ ┃ ┃ ┃ ┗ 📜ojdbc14.jar
+ ┃ ┃ ┣ 📂admin
+ ┃ ┃ ┃ ┣ 📜admin_member_list.jsp
+ ┃ ┃ ┃ ┗ 📜admin_member_modify_form.jsp
+ ┃ ┃ ┣ 📂comments
+ ┃ ┃ ┃ ┣ 📜comment_modify_form.jsp
+ ┃ ┃ ┃ ┗ 📜comments_list.jsp
+ ┃ ┃ ┣ 📂logoimage
+ ┃ ┃ ┃ ┗ 📜logo.png
+ ┃ ┃ ┣ 📂post
+ ┃ ┃ ┃ ┣ 📜post_comment_list.jsp
+ ┃ ┃ ┃ ┣ 📜post_list.jsp
+ ┃ ┃ ┃ ┗ 📜post_modify_form.jsp
+ ┃ ┃ ┣ 📂uploads
+ ┃ ┃ ┃ ┣ 📜1.png
+ ┃ ┃ ┃ ┣ 📜2.png
+ ┃ ┃ ┃ ┗ 📜3.png
  ┃ ┃ ┣ 📜.DS_Store
- ┃ ┃ ┗ 📜index.jsp
+ ┃ ┃ ┣ 📜board_insert_form.jsp
+ ┃ ┃ ┣ 📜board_modify_form.jsp
+ ┃ ┃ ┣ 📜common.css
+ ┃ ┃ ┣ 📜findpwd.jsp
+ ┃ ┃ ┣ 📜footer.jsp
+ ┃ ┃ ┣ 📜index.html
+ ┃ ┃ ┣ 📜joinmember.jsp
+ ┃ ┃ ┣ 📜login.jsp
+ ┃ ┃ ┣ 📜main-page.jsp
+ ┃ ┃ ┣ 📜navbar.jsp
+ ┃ ┃ ┣ 📜post_one.jsp
+ ┃ ┃ ┗ 📜top.jsp
  ┃ ┗ 📜.DS_Store
- ┣ 📂test
- ┃ ┣ 📂java
- ┃ ┗ 📂resources
  ┗ 📜.DS_Store
 </details>
 ```
