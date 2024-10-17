@@ -50,6 +50,10 @@ global IT(글로벌 아이티)<br>
 <br>
 mini2 Project 개발 기간<br><br>
 총 개발 기간 : 2024.06.28 ~ 2024.07.05<br><br>
+프로젝트 내 역할 : 메인화면&마이페이지 UI, 게시판 CRUD, 회원가입 UI , 로그인페이지 기능 수정<br><br>
+회고 : 개발자 옵션을 통해 프론트엔드 UI를 쉽게 만들 수 있다고 생각했는데 크나큰 오산이였고 프로젝트 개발할 때 왜 에자일하게 하는 지 느낄 수 있었다. 또한, 코드를 차분히 분석해야되는 걸 깨닫는 계기가 되었다. 
+
+
 <br>
 <br>
 <br>
@@ -201,5 +205,8 @@ git clone https://github.com/tkcheon/GlobalIT_mini1.git
  ┃ ┃ ┗ 📜top.jsp
  ┃ ┗ 📜.DS_Store
  ┗ 📜.DS_Store
-</details>
 ```
+</details>
+
+## 발표자료
+<iframe src="https://1drv.ms/p/c/0c7d9b79476a227c/IQSKV3advujxQ5adHmg-oPpYAc2_KmZCmV5UKuSWEnFccWA" width="402" height="327" frameborder="0" scrolling="no"></iframe>
